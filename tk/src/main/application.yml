@@ -1,0 +1,20 @@
+logging:
+  level:
+    '[org.springframework.web]': debug
+server:
+  servlet:
+    contextPath: /
+  port: 8081
+spring:
+  # mvc:
+  #   view:
+  #     prefix: /WEB-INF/views/
+  #     suffix: .jsp
+  thymeleaf: #thymeleaf 설정
+    check-template-location: true
+    prefix: classpath:/templates/   # .html 파일을 불러오기 위한 경로 설정(src/main/resources/templates)
+    suffix: .html   # 파일 확장자
+    cache: false
+    #view-names는 jsp와 같이 사용할경우 구분짓기 위하여 사용 thymeleaf로 시작하는 경우는 thymeleaf로 처리  
+    view-names: thymeleaf
+    # spring.thymeleaf.view-names=thymeleaf/*
