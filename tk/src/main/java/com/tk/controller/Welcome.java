@@ -1,16 +1,14 @@
 package com.tk.controller;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.servlet.ModelAndView;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class Welcome {
     
-    @GetMapping(value = "/welcome")
-    public String index(ModelAndView mv) {
-
-        mv.addObject("name" ,"pooney.jsp");
-
-        return "welcome";
+    @RequestMapping(value = "/welcome")
+    public String index(Model mv) {
+        mv.addAttribute("name" ,"pooney.j11p");
+        return "thymeleaf/welcome";
     }
 }
