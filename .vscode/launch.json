@@ -6,9 +6,9 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Current File",
+            "name": "LottoApplication",
             "request": "launch",
-            "mainClass": "${file}"
+            "mainClass": "com.tk.lotto.LottoApplication"
         },
         {
             "type": "java",
@@ -16,7 +16,13 @@
             "request": "launch",
             "mainClass": "lotto_project.tk.TkApplication",
             "projectName": "tk",
-            "vmArgs": "-Xmx2G -Xms512M"
+            "vmArgs": "-Xmx2G -Xms1024M"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
         }
     ]
 }
